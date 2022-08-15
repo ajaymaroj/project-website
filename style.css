@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "rubik", sans-serif;
+  line-height: 1;
+  font-weight: 500;
+  /* color: #555; */
+  /* padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px; */
+  position: relative;
+}
+.logo {
+  height: 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  background: #fff;
+
+  height: 60px;
+  text-align: center;
+
+  background-color: rgba(245, 240, 240, 0.6);
+}
+.top {
+  display: flex;
+  align-items: center;
+  gap: 250px;
+}
+.nav-lists {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: palevioletred;
+  border-bottom: 1px solid currentColor;
+}
+main {
+  height: 110vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(images/videoblocks-portrait-of-a-business-woman-on-the-background-of-the-night-city-the-girl-works-late-in-the-office_sjl6sljmye_thumbnail-1080_01.png);
+
+  background-size: cover;
+  position: relative;
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+  color: #fff;
+}
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+  color: #fff;
+}
+.container {
+  width: 1200px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: translate(-40%, 70%);
+  /* background-color: blueviolet; */
+}
+.inner-container {
+  width: 100%;
+  text-align: center;
+}
+.btn:link,
+.btn:visited {
+  background-color: palevioletred;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #fff;
+  color: palevioletred;
+}
+.login {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+.btn-nav {
+  border: none;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 16px 0;
+  padding: 0.75em 1.25em;
+  border: 1px solid transparent;
+  border-radius: 500em;
+  /* transition: background-color 0.25s ease-out, color 0.25s ease-out; */
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: lightblue;
+  color: #000048;
+}
+
+.btn-nav:hover {
+  cursor: pointer;
+  color: lightblue;
+  background-color: #000048;
+}
+.btn-1 {
+  background-color: #fff;
+  border: none;
+  width: 40px;
+  position: absolute;
+  border-radius: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.btn-icon {
+  height: 40px;
+  width: 40px;
+  stroke: palevioletred;
+}
+.btn--right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.dots {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  left: 50%;
+  transform: translate(-50%, 32px);
+  bottom: 0;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid palevioletred;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot--fill {
+  background: palevioletred;
+}
+.btn--left {
+  left: 0;
+
+  transform: translate(-50%, -50%);
+}
+
+.spootlight {
+  /* background-color: black; */
+  color: #fff;
+  margin-top: 1px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 80px;
+  padding-bottom: 100px;
+  /* padding: 50px; */
+  cursor: pointer;
+  /* margin-top: 100px; */
+}
+.photo {
+  width: 100%;
+}
+.pic-1 {
+  height: 60%;
+}
+.pic-2 {
+  width: 98%;
+  height: 55%;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.section {
+  width: 100%;
+  /* border: 1px solid; */
+  /* padding: 50px; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.inside {
+  padding: 30px;
+  background-color: #fff;
+  color: black;
+}
+.img-heading {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.img-description {
+  font-weight: 300;
+  font-size: 18px;
+  color: black;
+}
+.heading-1 {
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+span {
+  font-weight: 700;
+  margin-bottom: 100px;
+  color: rgba(145, 132, 132, 0.568);
+}
+.heading-secondary {
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 50px;
+  text-decoration: overline;
+}
+.head {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.testimonial-img {
+  width: 100px;
+
+  border-radius: 50%;
+}
+.testimonial-name {
+  color: #777;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  color: #555;
+}
+
+.section-testimonial {
+  padding: 55px;
+  margin-top: 50px;
+}
+.section-testimonial {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.9),
+      rgba(34, 34, 34, 0.8)
+    ),
+    url(images/testimonialbg.jpg);
+  background-size: cover;
+}
+.testimonial-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.primary-heading {
+  font-weight: 800;
+  font-size: 30px;
+  color: chocolate;
+  margin-bottom: 5px;
+}
+.form-para {
+  font-weight: 400;
+  font-size: 15px;
+  color: darkgoldenrod;
+}
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.details input,
+.details select {
+  width: 100%;
+  padding: 30px;
+  font-size: 25px;
+  font-family: inherit;
+  border: none;
+  background-color: #f5f5f2;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0 0.1);
+  color: rgb(31, 26, 26);
+}
+.textarea {
+  grid-column: 1/-1;
+  border: 1px solid;
+  background-color: #f5f5f2;
+  margin-bottom: 50px;
+}
+
+.submit {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.75em 1.25em;
+  border: 1px solid transparent;
+  border-radius: 500em;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: palevioletred;
+  color: #000048;
+}
+.forms {
+  padding: 50px;
+  transition: all 1.2s;
+}
+.footer {
+  border-top: 1px solid black;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.copyright {
+  font-size: 15px;
+  line-height: 1;
+  color: #767676;
+  margin-top: 15px;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #767676;
+  margin-top: 1px;
+}
+.footer-logo {
+  width: 100%;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.social-media {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icons {
+  height: 32px;
+  width: 30px;
+  stroke: black;
+}
+.icons a {
+  color: #fff;
+}
+.icons a:hover {
+  color: #767676;
+  fill: lightblue;
+}
+
+.social-icon {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-30%, -30%);
+}
+.social-icon:hover {
+  width: 50px;
+  height: 60px;
+}
+.support-list {
+  margin-top: 0;
+}
+.support-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.support a {
+  list-style: none;
+  text-decoration: none;
+  color: #767676;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(125, 125, 159);
+  transition: all 0.3s;
+  list-style: none;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.address {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: #777;
+}
+.footer-nav {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer {
+  background-color: #000048;
+}
+.support a {
+}
